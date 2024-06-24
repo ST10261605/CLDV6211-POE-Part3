@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<!--animated text after heading-->
+<h1>Contact Us</h1>
+<h2 class="contactUsHeading2">
+    <div class="animatedContact-text">
+        Do you have a <span></span>
+    </div>
+</h2>
+
+
+<div class="contactBox-container">
+    <!-- Email box -->
+    <div class="contactEmailBox">
+        <br />
+        <br />
+        <p class="emailText1">Email us</p>
+        <p class="emailText2">Send us an email at</p>
+        <p class="emailText3">info@KhumaloCraft.co.za</p>
+        <div>
+            <img src="~/Images/ContactEmailImage.png" alt="ContactEmailIcon" class="contactImage1-style" />
+        </div>
+        <button class="contactEmailButton" onClick="sendEmail()">Email Us</button>
+    </div>
+
+    <!--Using JS for the MailTo function-->
+    <!--MailTo essentially opens users mail application so KhumaloCraft email will already be in the mail address-->
+    <!-- not using KhumaloCraft email here (did not make one) so I'm using my personal email-->
+    <script>
+        function sendEmail() {
+            window.location.href = "mailto:samiyavawda@gmail.com";
+        }
+    </script>
+
+    <!-- Phone box -->
+    <div class="contactPhoneBox">
+        <br />
+        <br />
+        <p class="phoneText1">Give us a call</p>
+        <p class="phoneText2">Call us on</p>
+        <p class="phoneText3">+27 (0) 83 932 7612</p>
+        <div>
+            <img src="~/Images/WhitePhoneImage.png" alt="ContacPhoneIcon" class="contactImage2-style" />
+        </div>
+    </div>
+
+    <!-- Phone box -->
+    <div class="contactAssistanceBox">
+        <br />
+        <br />
+        <p class="assistText1">Need Assistance?</p>
+        <p class="assistText2">We've got experience experts waiting to help you Monday to Friday from 8am-5pm SAST.</p>
+        <div>
+            <img src="~/Images/MessageIcon.png" alt="ContacMessageIcon" class="contactImage3-style" />
+        </div>
+        <button class="contactSupportButton" onclick="sendRequest()">Send a support request</button>
+    </div>
+
+    <!--send support request JavaScript-->
+    <script>
+        function sendRequest() {
+            window.location.href = "mailto:samiyavawda@gmail.com";
+        }
+    </script>
+</div> <!-- Contact box container ends -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

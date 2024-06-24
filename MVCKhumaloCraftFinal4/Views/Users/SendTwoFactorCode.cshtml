@@ -1,0 +1,32 @@
+﻿@model VerifyTwoFactorCodeViewModel
+
+@{
+    ViewData["Title"] = "Send Two-Factor Code";
+}
+
+<br>
+<br>
+
+<h2>Send Two-Factor Code</h2>
+
+<p>Please click the link below to send your 2FA code via email:</p>
+
+<a href="@ViewBag.MailtoLink">Send 2FA Code</a>
+
+<p>After sending the code, enter it below to verify:</p>
+
+<form asp-action="VerifyTwoFactorCode" method="post">
+    <div class="form-group">
+        <label asp-for="TwoFactorCode" class="control-label"></label>
+        <input asp-for="TwoFactorCode" class="form-control" />
+        <span asp-validation-for="TwoFactorCode" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Verify</button>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

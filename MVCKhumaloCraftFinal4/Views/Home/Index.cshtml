@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Welcome to KhumaloCraft</h1>
+    <h2>Handcrafted Wonders, Uniting Artisans Everywhere</h2>
+
+    <!--lines in between-->
+    <br>
+    <br>
+    <br>
+
+    <!--CSS terminal style animation text-->
+    <div class="typewriter">
+        <h3 class="typewriter-header">We'll bring your vision to <span class="highlight-word">life.</span></h3>
+    </div>
+
+    <p>Whether you're envisioning a cozy retreat or a vibrant workspace,</p>
+    <p>KhumaloCraft is here to bring your vision to life.</p>
+    <p>Let us transform your ideas into reality and </p>
+    <p>create spaces that inspire, delight, and endure.</p>
+    <p>Handmade craftwork, made with love every time.</p>
+
+    <!--3D Bee Model container-->
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!--Button containers-->
+    <div class="button-container1">
+        <button class="btnCraftwork" onclick="redirectToWorkPage()">View Craftwork</button>
+    </div>
+
+    <div class="button-container2">
+        <button class="btnContact" onclick="redirectToContactPage()">Get in touch with us</button>
+    </div>
+
+    <!--Products we love section-->
+    <div class="homeSection2">
+        <h3 class="productsText">Products we love</h3>
+        <h3 class="productsTitle1">Elegant and timeless wood crafted chair</h3>
+        <p class="productsInfo1">
+            Indulge in the epitome of sophistication with our handcrafted wooden chair,
+            a timeless piece that seamlessly merges elegance with durability. Crafted with meticulous
+            attention to detail, each chair boasts exquisite woodwork showcasing the natural of fine
+            materials. Elevate your space with this statement piece, where comfort meets timeless design,
+            adding a touch of refinement to any interior setting. Crafted in Mozambique with unwavering
+            love and dedication, each chair is a masterpiece of meticulous craftsmanship, reflecting the
+            natural beauty of its origin. From the careful selection of materials to the intricate woodwork,
+            every detail is infused with the warmth of human touch.
+        </p>
+        <img src="~/Images/ProductHomePage1.jpeg" alt="Elegant wooden chair" class="productHomePage1-style" />
+        <button class="btnView1" onclick="redirectToCraftworkPage()">View</button>
+    </div>
+
+    <!--Second product-->
+    <div class="homeSection3">
+        <h3 class="productsTitle2">Dark oak bookshelf</h3>
+        <p class="productsInfo2">
+            A fusion of classic charm and modern functionality.
+            Crafted from rich, sturdy oak, this piece exudes warmth and sophistication, enhancing any
+            room with its timeless appeal. With ample shelving space and  a bold, dark finish,
+            it's both a practical storage solution and a striking focal point for your home or office.
+            Each shelf is thoughtfully designed to accommodate  a variety of items, from books and
+            decorative accents to keepsakes  and collectibles, allowing you to showcase  your personal
+            style and treasures with ease. The sturdy construction ensures durability and stability.
+            It is truly a reliable platform for your belongings for years to come.
+        </p>
+        <img src="~/Images/ProductHomePage2.jpeg" alt="Dark oak bookshelf" class="productHomePage2-style" />
+        <button class="btnView2" onclick="redirectToCraftworkPage()">View</button>
+    </div>
+
+    <!--Third product-->
+    <div class="homeSection4">
+        <h3 class="productsTitle3">Rustic polished table</h3>
+        <p class="productsInfo3">
+            A captivating blend of rugged charm and refined elegance. Crafted from premium
+            reclaimed wood, this table is meticulously hand-polished to accentuate its natural
+            grains and textures, creating a striking visual contrast. With its sturdy construction
+            and timeless appeal, this table serves as a versatile centerpiece for any space, from
+            cozy kitchens to upscale dining rooms. Gather around this table and experience the rustic
+            allure that invites you to linger a little longer, savoring each moment shared with loved
+            ones. Every meal becomes a celebration of craftsmanship and style as you bask in the warm
+            glow of its polished surface, adding a touch of rustic charm to every occasion.
+        </p>
+        <img src="~/Images/ProductHomePage3.jpeg" alt="Rustic polished table" class="productHomePage3-style" />
+        <button class="btnView3" onclick="redirectToCraftworkPage()">View</button>
+    </div>
+
+    <!--Why choose KhumaloCraft section-->
+    <div class="chooseKhumaloCraft">
+        <h3 class="chooseTitle">Why choose KhumaloCraft</h3>
+        <div class="cardHome1">
+            <img src=" \Images/brain.png" alt="brain" class="brainImage-style" />
+            <h3 class="knowledgeTitle">Extensive knowledge</h3>
+            <p class="knowledgeInfo">
+                For over 20 years, KhumaloCraft
+                has  been supplying high-quality
+                pottery, furniture and utensils
+                hand-made by experienced artisans
+                worldwide.
+            </p>
+        </div>
+        <div class="cardHome2">
+            <img src="~/Images/globe.png" alt="globe icon" class="globeImage-style" />
+            <h3 class="globeTitle">Sourced globally</h3>
+            <p class="globalInfo">
+                You'll discover a diverse range of products, all meticulously hand-crafted by artisans representing
+                rich cultures from around the world.
+            </p>
+        </div>
+        <div class="cardHome3">
+            <img src="~/Images/hammer.png" alt="hammer icon" class="hammerImage-style" />
+            <h3 class="hammerTitle">Built for durability</h3>
+            <p class="hammerInfo">
+                At KhumaloCraft, we ensure all our products are durable, comfortable and stylish.
+            </p>
+        </div>
+    </div>
+
+    <!--Testimonial section-->
+    <div class="reviewSection">
+        <h3 class="reviewSectionTitle">Don't take our word for it. Take theirs</h3>
+        <img src="~/Images/googleLogo.png" alt="google logo" class="googleLogo-style" />
+        <p class="ratingText-style">Rating</p>
+        <p class="ratingText2-style">5.0</p>
+        <img src="~/Images/5stars.png" alt="5 stars" class="fiveStars-style" />
+        <p class="ratingText3-style">120 reviews</p>
+        <img src="~/Images/SiteReview1.png" alt="google review 1" class="siteReview1-style" />
+        <img src="~/Images/SiteReview2.png" alt="google review 2" class="siteReview2-style" />
+        <img src="~/Images/SiteReview3.png" alt="google review 3" class="siteReview3-style" />
+        <button class="btnReview">Write a review</button>
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>

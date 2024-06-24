@@ -1,0 +1,40 @@
+﻿@model MVCKhumaloCraftFinal4.Models.Admin
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Admin</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="adminEmail" class="control-label"></label>
+                <input asp-for="adminEmail" class="form-control" />
+                <span asp-validation-for="adminEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="adminPassword" class="control-label"></label>
+                <input asp-for="adminPassword" class="form-control" />
+                <span asp-validation-for="adminPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,151 @@
+﻿@model MVCKhumaloCraftFinal4.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+    ViewData["IsLoginPage"] = true;
+}
+
+<style>
+    body {
+        background: url(../Images/LoginBackground.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
+    }
+
+    .loginContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .wrapperLogin {
+        width: 420px;
+        background: transparent;
+        border: none;
+        color: #FAF2F2;
+        border-radius: 12px;
+        padding: 30px 40px;
+    }
+
+        .wrapperLogin loginHeading1 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .wrapperLogin .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+
+
+        .wrapperLogin .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+
+        .wrapperLogin .registerButton1 {
+            width: 100%;
+            height: 45px;
+            background: #FAF2F2;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0, .1);
+            cursor: pointer;
+            font-family: 'League Spartan', sans-serif;
+            font-size: 20px;
+            font-weight: 450;
+        }
+
+        .wrapperLogin .login-link {
+            font-size: 14px;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+
+    .register-link p a {
+        color: #FAF2F2;
+        text-decoration: none;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+        .register-link p a:hover {
+            text-decoration: underline;
+        }
+
+
+    .loginHeading1 {
+        font-family: 'League Spartan', sans-serif;
+        background-color: transparent;
+        color: #FAF2F2;
+    }
+
+    .loginParagraph1 {
+        text-align: center;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 20px;
+        background-color: transparent;
+        color: #FAF2F2;
+    }
+
+    .wrapperLogin .loginButton1 {
+        width: 100%;
+        height: 45px;
+        background: #FAF2F2;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0,0,0, .1);
+        cursor: pointer;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 20px;
+        font-weight: 450;
+    }
+
+</style>
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<div class="loginContainer">
+    <div class="wrapperLogin">
+        <form asp-action="Login">
+            <h1 class="loginHeading1">Login</h1>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="input-box">
+                <input asp-for="Email" placeholder="Email" required />
+                <i class='bx bxs-user'></i>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="input-box">
+                <input asp-for="Password" type="password" placeholder="Password" required />
+                <i class='bx bxs-lock-alt'></i>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password</a>
+            </div>
+            <button type="submit" class="loginButton1">Login</button>
+            <div class="register-link">
+                <p class="loginParagraph1">Don't have an account? <a href="@Url.Action("Create", "Users")">Register</a></p>
+                <p class="loginParagraph2"><a href="@Url.Action("Login", "Admins")">Login as admin</a></p>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

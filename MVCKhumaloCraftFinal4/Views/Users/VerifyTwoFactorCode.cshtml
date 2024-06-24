@@ -1,0 +1,24 @@
+﻿@model VerifyTwoFactorCodeViewModel
+
+@{
+    ViewData["Title"] = "Verify Two-Factor Code";
+}
+
+<br>
+<br>
+
+<h2>Verify Two-Factor Code</h2>
+
+<form asp-action="VerifyTwoFactorCode" method="post">
+    <div class="form-group">
+        <label asp-for="TwoFactorCode" class="control-label"></label>
+        <input asp-for="TwoFactorCode" class="form-control" />
+        <span asp-validation-for="TwoFactorCode" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Verify</button>
+</form>
+
+<br>
+<br>
+<br>
+<br>

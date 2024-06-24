@@ -1,0 +1,1756 @@
+/* Importing Google Fonts */
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet" >
+/* Setting base font size */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    background-color: #1D1D1D;
+    color: #f29b14;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Customizing button focus styles */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #598d78;
+}
+
+/* Setting base styles for HTML and body */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #1D1D1D;
+    color: #f29b14;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+/* Customizing navbar background */
+.custom-navbar-bg {
+    background-color: #1D1D1D !important;
+    max-height: 50px;
+}
+
+/* Customizing navbar links */
+.navbar .nav-link {
+    color: #f29b14 !important;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 19px;
+}
+
+/* Centering the central nav bar links */
+.central-links {
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+    /* Adjusting margin for the central nav bar links */
+    .central-links ul {
+        margin: 0; /* Reset margin */
+        padding: 0; /* Reset padding */
+        display: flex; /* Use flexbox for alignment */
+        justify-content: center; /* Center links */
+    }
+
+    .central-links li {
+        margin-right: 16px;
+    }
+
+/* Adjusting margin for the "Register" and "Login" links */
+.navbar-nav.right-align {
+    margin-left: -50px;
+}
+
+    .navbar-nav.right-align li {
+        margin-left: 10px; /* Adjust this value to increase/decrease the space */
+    }
+
+/* Customizing logo */
+.navbar-brand-container {
+}
+
+/* logo size for home page*/
+.navbar-logo-home {
+    width: 160px;
+    height: 160px;
+    margin-bottom: -90px;
+    margin-left: -10px;
+    border: none;
+    outline: none;
+}
+
+/*logo size for other pages*/
+.navbar-logo-other {
+    width: 160px;
+    height: 160px;
+    margin-bottom: -90px;
+    margin-left: -10px;
+    border: none;
+    outline: none;
+}
+
+/* Customizing headings */
+h1, h2 {
+    font-family: 'League Spartan', sans-serif;
+    background-color: #1D1D1D;
+    color: #f29b14;
+    text-align: center;
+}
+
+/*for the css terminal style text in Index*/
+.typewriter {
+    display: inline-block;
+}
+
+/*css terminal style text in index.cshtml*/
+.typewriter-header {
+    font-family: monospace;
+    background-color: #1D1D1D;
+    color: #f29b14;
+    text-align: left;
+    border-right: 5px solid;
+    letter-spacing: 10px;
+    width: 265%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: -470px;
+    animation: typing 3s steps(31) alternate infinite, /*value needs to be same amount of letters in your desired text - in this case its 31*/
+    cursor .4s step-end; /*cursor animation*/
+}
+
+/*cursor blinking*/
+@keyframes cursor {
+    100% {
+        border-color: transparent
+    }
+}
+
+/*typing effect*/
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 265%
+    }
+}
+
+/* Customizing paragraph text */
+p {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 23px;
+    background-color: #1D1D1D;
+    color: #f29b14;
+    text-align: left;
+}
+
+/*customizing specific word color ("life" in index.cshtml)*/
+.highlight-word {
+    color: #CACACA;
+}
+
+/*customizing buttons*/
+.btnCraftwork {
+    width: 200px;
+    height: 55px;
+    background-color: #f29b14;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+
+.btnContact {
+    width: 220px;
+    height: 55px;
+    background-color: #6b5a50;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+
+/* Defining the transition properties for hover effect */
+.btnCraftwork,
+.btnContact {
+    border-radius: 0;
+    transition: border-radius 0.5s ease
+}
+
+    /* Adding hover effect */
+    .btnCraftwork:hover,
+    .btnContact:hover {
+        border-radius: 30px; /* Applying border-radius change on hover */
+    }
+
+.button-container1 {
+    margin-left: -673px;
+}
+
+/*aligning buttons on home page to the left & horizontally next to each other*/
+.button-container1,
+.button-container2 {
+    position: relative;
+    display: inline-block;
+    margin-right: 100px;
+    top: 50px;
+}
+
+/*changing font size on about us page without altering font size on home page*/
+.aboutUsParagraph {
+    font-family: 'League Spartan';
+    font-size: 20px;
+    white-space: pre-line;
+    color: #F2ECEC;
+    font-weight: 350;
+}
+
+.aboutUsParagraph2 {
+    font-family: 'League Spartan';
+    font-size: 20px;
+    white-space: pre-line;
+    color: #F2ECEC;
+    font-weight: 350;
+    text-align: center;
+}
+
+.aboutUsHeading2 {
+    font-family: 'League Spartan', sans-serif;
+    text-align: left;
+}
+
+.aboutUsHeading3 {
+    font-family: 'League Spartan', sans-serif;
+    text-align: left;
+    font-size: 40px;
+    color: #F2ECEC;
+}
+
+.aboutUsHeading4 {
+    font-family: 'League Spartan', sans-serif;
+    text-align: left;
+    color: #F2ECEC;
+}
+
+.aboutUsHeading5 {
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    color: #F2ECEC;
+    font-size: 40px;
+}
+
+.rectangleAboutPage {
+    width: 300px;
+    height: 10px;
+    background-color: #F2ECEC;
+}
+
+.aboutUsHandshotPic-style {
+    width: 600px;
+    height: 430px;
+    margin-left: 750px;
+    margin-top: -760px;
+    border-radius: 15px;
+}
+
+.aboutUsContactGIF-style {
+    position: relative;
+    width: 600px;
+    height: 240px;
+    margin-left: 750px;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+
+.aboutContactButton1 {
+    position: absolute;
+    width: 230px;
+    height: 50px;
+    top: 42%;
+    left: 76.8%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /*to overlap the button with the GIF*/
+    border-radius: 0px;
+    cursor: pointer;
+    background-color: ghostwhite;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    transition: border-radius 0.5s ease;
+    border: none;
+}
+
+    .aboutContactButton1:hover {
+        border-radius: 30px;
+    }
+
+.highlight-word2 {
+    color: #f29b14;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /*center cards horizontally*/
+    flex-wrap: wrap; /*cards move to next line if not enough space*/
+}
+
+/*customizing the cards*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'League Spartan';
+    background-color: #E7E8E9;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'League Spartan';
+    background-color: #E7E8E9;
+    margin-right: 645px;
+    margin-top: 40px;
+}
+
+.card3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'League Spartan';
+    background-color: #E7E8E9;
+    margin-right: 320px;
+    margin-top: -587px;
+}
+
+.card4 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'League Spartan';
+    background-color: #E7E8E9;
+    margin-left: 1000px;
+    margin-top: -586px;
+}
+
+.card5 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'League Spartan';
+    background-color: #E7E8E9;
+    margin-left: 20px;
+    margin-top: -34px;
+}
+
+.card6 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'League Spartan';
+    background-color: #E7E8E9;
+    margin-left: 22px;
+    margin-top: 28px;
+}
+
+.card7 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'League Spartan';
+    background-color: #E7E8E9;
+    margin-top: -100px;
+    left: -2.9%;
+    transform: translateX(2.9%);
+}
+
+.card8 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'League Spartan';
+    background-color: #E7E8E9;
+    margin-top: 30px;
+    left: -4%;
+    transform: translateX(4%);
+}
+
+.cardHeading {
+    font-family: 'League Spartan';
+    font-size: 30px;
+    background-color: #E7E8E9;
+    color: #231E24;
+}
+
+.cardParagraph {
+    font-family: 'League Spartan';
+    background-color: #E7E8E9;
+    color: #231E24;
+}
+
+.price {
+    background-color: #E7E8E9;
+    color: #231E24;
+    font-family: 'League Spartan';
+    font-size: 25px;
+    margin-left: 108px;
+}
+
+.priceOutOfStock {
+    background-color: #E7E8E9;
+    color: darkred;
+    font-family: 'League Spartan';
+    font-size: 28px;
+    margin-left: 78px;
+}
+
+.card button {
+    color: black;
+    border-color: white;
+    background-color: #f29b14;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+}
+
+.card2 button {
+    color: black;
+    border-color: white;
+    background-color: #f29b14;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+}
+
+.card3 button {
+    color: black;
+    border-color: white;
+    background-color: #f29b14;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+}
+
+.card4 button {
+    color: black;
+    border-color: white;
+    background-color: #f29b14;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+}
+
+
+.card5 button {
+    color: black;
+    border-color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    background-color: #f29b14;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+}
+
+.card6 button {
+    color: black;
+    border-color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    background-color: #f29b14;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+}
+
+
+.card7 button {
+    color: black;
+    border-color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    background-color: #f29b14;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+}
+
+.card8 button {
+    color: black;
+    border-color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    background-color: #f29b14;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    font-family: 'League Spartan';
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+/*Animated text in contact us page*/
+.contactUsHeading2 {
+    margin-left: 416px;
+    font-size: 40px;
+    padding: 0;
+    background-color: #1D1D1D;
+    color: #f29b14;
+    display: flex;
+    font-family: 'League Spartan';
+}
+
+.animatedContact-text {
+    font-family: 'League Spartan';
+}
+
+    .animatedContact-text span {
+        position: relative;
+    }
+
+        .animatedContact-text span::before {
+            content: "Question?";
+            color: #007BB8;
+            animation: wordsContact 20s infinite;
+        }
+
+        .animatedContact-text span::after {
+            content: "";
+            position: absolute;
+            width: calc(100% + 100px);
+            height: 120%;
+            background-color: #1D1D1D;
+            border-left: 2px solid #007BB8;
+            right: -8px;
+            animation: cursor .8s infinite, typingContact 20s steps(23) infinite;
+        }
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes wordsContact {
+    0%, 20% {
+        content: "Question?";
+    }
+
+    21%, 40% {
+        content: "Compliment?";
+    }
+
+    41%, 60% {
+        content: "Compliant?";
+    }
+
+    61%, 80% {
+        content: "Topic to discuss?";
+    }
+
+    81%, 100% {
+        content: "Recommendation?";
+    }
+}
+
+@keyframes typingContact {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+.contactBox-container {
+    display: flex;
+    justify-content: left; /*center contact box's horizontally*/
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.contactEmailBox {
+    display: inline-block;
+    vertical-align: top;
+    height: 300px;
+    width: 350px;
+    background-color: #3B3D3E;
+    font-family: 'League Spartan';
+    font-size: 30px;
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 70px;
+}
+
+.contactPhoneBox {
+    display: inline-block;
+    vertical-align: top;
+    height: 300px;
+    width: 350px;
+    background-color: #3B3D3E;
+    font-family: 'League Spartan';
+    font-size: 30px;
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 70px;
+}
+
+.contactAssistanceBox {
+    display: inline-block;
+    vertical-align: top;
+    height: 300px;
+    width: 350px;
+    background-color: #3B3D3E;
+    font-family: 'League Spartan';
+    font-size: 30px;
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 20px;
+}
+
+.contactImage1-style {
+    width: 80px;
+    height: 60px;
+    margin-left: 131px;
+    margin-top: -254px;
+}
+
+.contactImage2-style {
+    width: 50px;
+    height: 50px;
+    margin-left: 146px;
+    margin-top: -250px;
+}
+
+.contactImage3-style {
+    width: 100px;
+    height: 100px;
+    margin-left: 130px;
+    margin-top: -268px;
+}
+
+.emailText1 {
+    background-color: #3B3D3E;
+    text-align: center;
+    font-family: 'League Spartan';
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.emailText2 {
+    background-color: #3B3D3E;
+    text-align: center;
+    font-family: 'League Spartan';
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.emailText3 {
+    background-color: #3B3D3E;
+    text-align: center;
+    font-family: 'League Spartan';
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.phoneText1 {
+    background-color: #3B3D3E;
+    text-align: center;
+    font-family: 'League Spartan';
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.phoneText2 {
+    background-color: #3B3D3E;
+    text-align: center;
+    font-family: 'League Spartan';
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.phoneText3 {
+    background-color: #3B3D3E;
+    text-align: center;
+    font-family: 'League Spartan';
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.assistText1 {
+    background-color: #3B3D3E;
+    text-align: center;
+    font-family: 'League Spartan';
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.assistText2 {
+    background-color: #3B3D3E;
+    text-align: center;
+    font-family: 'League Spartan';
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.contactGIF-style {
+    height: 323px;
+    width: 350px;
+    margin-left: 910px;
+    margin-top: -950px;
+}
+
+.contactEmailButton {
+    position: absolute;
+    top: 610px;
+    left: 22.7%;
+    transform: translateX(-50%);
+    width: 352px;
+    height: 50px;
+    font-family: 'League Spartan';
+    font-size: 30px;
+    color: black;
+    background-color: #F2ECEC;
+}
+
+.contactSupportButton {
+    position: absolute;
+    top: 610px;
+    left: 78.3%;
+    transform: translateX(-50%);
+    width: 352px;
+    height: 50px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    color: black;
+    background-color: #F2ECEC;
+}
+
+/* Defining the transition properties for hover effect */
+.contactEmailButton,
+.contactSupportButton {
+    border-radius: 0;
+    transition: border-radius 0.4s ease
+}
+
+    /* Adding hover effect */
+    .contactEmailButton:hover,
+    .contactSupportButton:hover {
+        border-radius: 30px; /* Applying border-radius change on hover */
+    }
+
+.socialMediaContainer {
+    width: 51px;
+    height: 53px;
+    display: flex;
+    justify-content: flex-end; /* Align items to the end (right) of the container */
+    position: absolute;
+    top: -3px;
+    right: 40px;
+    transition: background-color 0.3s ease;
+}
+
+/*Customizing the team photos on about us*/
+
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.grid {
+    width: min-content;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-auto-rows: 300px;
+    gap: 1rem;
+}
+
+.aboutTeam {
+    position: relative;
+    left: 59%;
+    bottom: 26%;
+    aspect-ratio: 1;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-img {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.aboutTeam:hover .card-img {
+    transform: scale(0.85);
+    filter: brightness(0.65);
+}
+
+
+.card-box {
+    padding: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Positioning the Boxes inside the card */
+.box-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-content: flex-end;
+}
+
+.box-2 {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    align-items: flex-end;
+}
+
+.box-3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    justify-content: flex-end;
+}
+
+.box-4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* Offsetting the Boxes */
+.top-left {
+    transform: translate(-105%, -105%);
+}
+
+.top-right {
+    transform: translate(105%, -105%);
+}
+
+.bottom-right {
+    transform: translate(105%, 105%);
+}
+
+.bottom-left {
+    transform: translate(-105%, 105%);
+}
+
+.aboutTeam:hover .card-box {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Styling the Content inside box */
+.card-box > p {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.85;
+}
+
+.aboutTeamText {
+    background-color: transparent;
+    color: black;
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+}
+
+.aboutTeamParagraph {
+    background-color: transparent;
+    color: black;
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.homeSection2 {
+    position: relative;
+    margin-top: 200px;
+    background-color: #F2ECEC;
+    width: 1514px;
+    height: 700px;
+    margin-left: -110px;
+}
+
+.homeSection3 {
+    position: relative;
+    margin-top: 0px;
+    background-color: #F2ECEC;
+    width: 1514px;
+    height: 700px;
+    margin-left: -110px;
+}
+
+.homeSection4 {
+    position: relative;
+    margin-top: -10px;
+    background-color: #F2ECEC;
+    width: 1514px;
+    height: 700px;
+    margin-left: -110px;
+}
+
+.productsText {
+    position: absolute;
+    bottom: 620px; /*distance from the bottom*/
+    left: 50%; /*center horizontally*/
+    transform: translateX(-50%); /*center horizontally as well*/
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.productsTitle1 {
+    position: absolute;
+    bottom: 520px;
+    left: 23%;
+    transform: translateX(-50%);
+    text-align: left;
+    color: black;
+    font-size: 35px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.productsTitle2 {
+    position: absolute;
+    bottom: 600px;
+    right: 3%;
+    transform: translateX(-3%);
+    text-align: right;
+    color: black;
+    font-size: 35px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.productsTitle3 {
+    position: absolute;
+    bottom: 690px;
+    left: 5%;
+    transform: translateX(-5%);
+    text-align: left;
+    color: black;
+    font-size: 35px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.productsInfo1 {
+    position: absolute;
+    bottom: 250px;
+    left: 7%;
+    transform: translateX(-7%);
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #F2ECEC;
+    margin-bottom: 10px;
+    white-space: pre-line;
+}
+
+.productsInfo2 {
+    position: absolute;
+    bottom: 330px;
+    right: 2%;
+    transform: translateX(-2%);
+    text-align: right;
+    color: black;
+    font-size: 20px;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #F2ECEC;
+    margin-bottom: 10px;
+    white-space: pre-line;
+}
+
+.productsInfo3 {
+    position: absolute;
+    bottom: 390px;
+    left: 8%;
+    transform: translateX(-8%);
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #F2ECEC;
+    margin-bottom: 10px;
+    white-space: pre-line;
+}
+
+/*elegant wooden chair picture in home page*/
+.productHomePage1-style {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    bottom: 90px;
+    left: 94%;
+    transform: translateX(-96%);
+    border-radius: 15px;
+}
+
+/*dark oak bookshelf picture in home page*/
+.productHomePage2-style {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    bottom: 180px;
+    right: 47%;
+    transform: translateX(-45%);
+    border-radius: 15px;
+}
+
+/*rustic polished table picture in home page*/
+.productHomePage3-style {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    bottom: 260px;
+    left: 94%;
+    transform: translateX(-94%);
+    border-radius: 15px;
+}
+
+.btnView1 {
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    bottom: 120px;
+    left: 5%;
+    transform: translateX(-5%);
+    background-color: #f29b14;
+    color: #FAF2F2;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+
+.btnView2 {
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    bottom: 200px;
+    right: 2%;
+    transform: translateX(-2%);
+    background-color: #f29b14;
+    color: #FAF2F2;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+
+.btnView3 {
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    bottom: 270px;
+    left: 5%;
+    transform: translateX(-5%);
+    background-color: #f29b14;
+    color: #FAF2F2;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+
+/*adding hover effect to view buttons*/
+.btnView1,
+.btnView2,
+.btnView3 {
+    border-radius: 0;
+    transition: border-radius 0.5s ease;
+}
+
+    .btnView1:hover,
+    .btnView2:hover,
+    .btnView3:hover {
+        border-radius: 30px;
+    }
+
+.chooseKhumaloCraft {
+    position: relative;
+    margin-top: -140px;
+    background-color: #E4DDDD;
+    width: 1514px;
+    height: 600px;
+    margin-left: -110px;
+}
+
+.chooseTitle {
+    position: absolute;
+    bottom: 520px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    color: black;
+    font-size: 35px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.cardHome1 {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 380px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'League Spartan';
+    background-color: #D9D9D9;
+    margin-left: 40px;
+    margin-top: 110px;
+}
+
+.cardHome2 {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 380px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'League Spartan';
+    background-color: #D9D9D9;
+    margin-left: 550px;
+    margin-top: 110px;
+}
+
+.cardHome3 {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 380px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'League Spartan';
+    background-color: #D9D9D9;
+    margin-left: 1050px;
+    margin-top: 110px;
+}
+
+.brainImage-style {
+    width: 65px;
+    height: 65px;
+    margin-left: 160px;
+    margin-top: 10px;
+}
+
+.globeImage-style {
+    width: 65px;
+    height: 65px;
+    margin-left: 160px;
+    margin-top: 10px;
+}
+
+.hammerImage-style {
+    width: 65px;
+    height: 70px;
+    margin-left: 160px;
+    margin-top: 10px;
+}
+
+.knowledgeTitle {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 28px;
+    margin-top: 23px;
+    text-align: center;
+    color: black;
+}
+
+.globeTitle {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 28px;
+    margin-top: 23px;
+    text-align: center;
+    color: black;
+}
+
+.hammerTitle {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 28px;
+    margin-top: 23px;
+    text-align: center;
+    color: black;
+}
+
+.knowledgeInfo {
+    white-space: pre-line;
+    background-color: #D9D9D9;
+    margin-left: 32px;
+    color: black;
+}
+
+.globalInfo {
+    white-space: pre-line;
+    background-color: #D9D9D9;
+    margin-left: 32px;
+    color: black;
+}
+
+.hammerInfo {
+    white-space: pre-line;
+    background-color: #D9D9D9;
+    margin-left: 32px;
+    color: black;
+}
+
+/*review section with carousel image slider*/
+.reviewSection {
+    position: relative;
+    margin-top: 0px;
+    background-color: #1D1D1D;
+    width: 1510px;
+    height: 600px;
+    margin-left: -110px;
+}
+
+.reviewSectionTitle {
+    position: absolute;
+    bottom: 520px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    color: white;
+    font-size: 35px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.googleLogo-style {
+    position: absolute;
+    bottom: 450px;
+    height: 30px;
+    width: 90px;
+    left: 2%;
+    transform: translateX(-2%);
+}
+
+.ratingText-style {
+    position: absolute;
+    bottom: 431px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 21px;
+    left: 9%;
+    transform: translateX(-9%);
+    color: #F2ECEC;
+}
+
+.ratingText2-style {
+    position: absolute;
+    bottom: 400px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    left: 9%;
+    transform: translateX(-9%);
+    color: #F2ECEC;
+}
+
+.ratingText2-style {
+    position: absolute;
+    bottom: 390px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 21px;
+    left: 2%;
+    transform: translateX(-2%);
+    color: #F2ECEC;
+}
+
+.fiveStars-style {
+    position: absolute;
+    bottom: 400px;
+    height: 50px;
+    width: 70px;
+    left: 5%;
+    transform: translateX(-5%);
+}
+
+.ratingText3-style {
+    position: absolute;
+    bottom: 394px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px;
+    left: 11%;
+    transform: translateX(-11%);
+    color: #F2ECEC;
+}
+
+.siteReview1-style {
+    position: absolute;
+    bottom: 40px;
+    height: 365px;
+    width: 475px;
+    left: 3%;
+    transform: translateX(-5%);
+}
+
+.siteReview2-style {
+    position: absolute;
+    bottom: 40px;
+    height: 365px;
+    width: 475px;
+    left: 36%;
+    transform: translateX(-5%);
+}
+
+.siteReview3-style {
+    position: absolute;
+    bottom: 40px;
+    height: 365px;
+    width: 475px;
+    left: 69%;
+    transform: translateX(-5%);
+}
+
+.btnReview {
+    position: absolute;
+    bottom: 400px;
+    height: 50px;
+    width: 170px;
+    left: 96.8%;
+    transform: translateX(-96.8%);
+    background-color: #f29b14;
+    border-radius: 0;
+    transition: border-radius 0.5s ease
+}
+
+    .btnReview:hover {
+        border-radius: 30px;
+    }
+
+.webFooter {
+    position: relative;
+    background-color: #F2ECEC;
+    bottom: 0px;
+    width: 1513px;
+    height: 270px;
+}
+
+.row1 {
+    position: absolute;
+    background-color: #FAF2F2;
+    color: black;
+    bottom: 200px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    left: 3%;
+    transform: translateX(-3%);
+}
+
+.item1 {
+    position: absolute;
+    background-color: #FAF2F2;
+    color: black;
+    bottom: 160px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    left: 3%;
+    transform: translateX(-3%);
+}
+
+.row2 {
+    position: absolute;
+    background-color: #FAF2F2;
+    color: black;
+    bottom: 200px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    left: 20%;
+    transform: translateX(-20%);
+}
+
+.item2 {
+    position: absolute;
+    background-color: #FAF2F2;
+    color: black;
+    bottom: 160px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    left: 20.5%;
+    transform: translateX(-20.5%);
+}
+
+.item3 {
+    position: absolute;
+    background-color: #FAF2F2;
+    color: black;
+    bottom: 120px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    left: 18%;
+    transform: translateX(-18%);
+}
+
+.item4 {
+    position: absolute;
+    background-color: #FAF2F2;
+    color: black;
+    bottom: 75px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    left: 18%;
+    transform: translateX(-18%);
+}
+
+.row3 {
+    position: absolute;
+    background-color: #FAF2F2;
+    color: black;
+    bottom: 200px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    left: 43%;
+    transform: translateX(-43%);
+}
+
+.item5 {
+    position: absolute;
+    background-color: #FAF2F2;
+    color: black;
+    bottom: 163px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    left: 43%;
+    transform: translateX(-43%);
+}
+
+.item6 {
+    position: absolute;
+    background-color: #FAF2F2;
+    color: black;
+    bottom: 121px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    left: 43%;
+    transform: translateX(-43%);
+}
+
+.row4 {
+    position: absolute;
+    background-color: #FAF2F2;
+    color: black;
+    bottom: 200px;
+    font-family: 'League Spartan', sans-serif;
+    left: 80%;
+    transform: translateX(-80%);
+}
+
+.item7 {
+    position: absolute;
+    background-color: #FAF2F2;
+    color: black;
+    bottom: 160px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    left: 79.7%;
+    transform: translateX(-79.7%);
+}
+
+.newsLetter {
+    position: absolute;
+    height: 41px;
+    width: 350px;
+    background-color: black;
+    bottom: 100px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    left: 79%;
+    transform: translateX(-79%);
+}
+
+.newsLetterButton {
+    position: absolute;
+    height: 41px;
+    width: 140px;
+    background-color: #F29B14;
+    color: black;
+    bottom: -0.1px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    left: 134%;
+    transform: translateX(-85%);
+}
+
+.highlight-word3 {
+    color: #f29b14;
+}
+
+.workHeading1 {
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 40px;
+    color: #f29b14;
+}
+
+.workHeading2 {
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    color: #FAF2F2;
+}
+
+/*for the login page*/
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapperLogin {
+    width: 420px;
+    background: transparent;
+    border: none;
+    color: #FAF2F2;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+    .wrapperLogin loginHeading1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .wrapperLogin .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+    }
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    color: #FAF2F2;
+    padding: 20px 45px 20px 20px;
+}
+
+    .input-box input::placeholder {
+        color: #FAF2F2;
+    }
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapperLogin .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #FAF2F2;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #FAF2F2;
+    text-decoration: none;
+}
+
+    .remember-forgot a:hover {
+        text-decoration: underline;
+    }
+
+.wrapperLogin .loginButton1 {
+    width: 100%;
+    height: 45px;
+    background: #FAF2F2;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0, .1);
+    cursor: pointer;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.wrapperLogin .register-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #FAF2F2;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+    .register-link p a:hover {
+        text-decoration: underline;
+    }
+
+
+/*For the register page*/
+.loginHeading1 {
+    font-family: 'League Spartan', sans-serif;
+    background-color: transparent;
+    color: #FAF2F2;
+}
+
+.loginParagraph1 {
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    background-color: transparent;
+    color: #FAF2F2;
+}
+
+.transparent-navbar {
+    background-color: transparent !important;
+    border: none;
+}
+
+.login-nav-item .nav-link {
+    color: white !important;
+    margin-left: 26px;
+}
+
+.register-nav-item .nav-link {
+    color: white !important;
+    margin-left: 26px;
+}
+
+
+.btn-primary {
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.table th {
+    color: white; /* Change to your desired color */
+}
+
+.table td {
+    color: white; /* Change to your desired color */
+}
+
+.priceText {
+    background-color: #E7E8E9;
+    color: black;
+}
+
+.categoryText {
+    background-color: #E7E8E9;
+    color: black;
+}
+
+.loginParagraph2 {
+    background-color: transparent;
+}
+
+.updateQuantity-style {
+    height: 40px;
+    width: 150px;
+    background-color: #0d6efd;
+    color: white;
+}
+
+    .updateQuantity-style:hover {
+        background-color: dodgerblue;
+        color: white;
+        cursor: pointer;
+    }
+/*customizing social media icons on index page
+.instagramLogo-style {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer; /*changing cursor to hyperlink cursor upon hover
+}
+
+.facebookLogo-style {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.linkedinLogo-style {
+    width: 50px; 
+    height: 50px; 
+    cursor: pointer;
+}
+
+.privacyPolicy-style {
+    font-family: 'League Spartan'; 
+    font-size: 22px; 
+    text-align: center;
+}
+*/

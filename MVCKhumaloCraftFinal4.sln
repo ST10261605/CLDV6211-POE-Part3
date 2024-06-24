@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34607.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCKhumaloCraftFinal4", "MVCKhumaloCraftFinal4\MVCKhumaloCraftFinal4.csproj", "{75BAB70D-95E5-4B0C-B7E3-B98DBEC3FD68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KhumaloCraftDurableFunctions", "KhumaloCraftDurableFunctions\KhumaloCraftDurableFunctions.csproj", "{EBB09876-FB85-42B0-B0CE-2B78BE1D99F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75BAB70D-95E5-4B0C-B7E3-B98DBEC3FD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75BAB70D-95E5-4B0C-B7E3-B98DBEC3FD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75BAB70D-95E5-4B0C-B7E3-B98DBEC3FD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75BAB70D-95E5-4B0C-B7E3-B98DBEC3FD68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBB09876-FB85-42B0-B0CE-2B78BE1D99F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBB09876-FB85-42B0-B0CE-2B78BE1D99F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBB09876-FB85-42B0-B0CE-2B78BE1D99F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBB09876-FB85-42B0-B0CE-2B78BE1D99F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4FE0BF3-E2D1-4F99-AD02-B4D76CF649DD}
+	EndGlobalSection
+EndGlobal

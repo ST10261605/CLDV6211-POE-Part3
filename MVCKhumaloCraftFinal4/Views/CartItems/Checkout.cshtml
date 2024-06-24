@@ -1,0 +1,67 @@
+﻿@model MVCKhumaloCraftFinal4.Models.OrderViewModel
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h1>Checkout</h1>
+<br>
+<br>
+
+<div class="container">
+    <h4>Order Details</h4>
+    <hr />
+    <form asp-action="ConfirmCheckout" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="deliveryCountry" class="control-label"></label>
+            <input asp-for="deliveryCountry" class="form-control" />
+            <span asp-validation-for="deliveryCountry" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="shippingMethod" class="control-label"></label>
+            <input asp-for="shippingMethod" class="form-control" />
+            <span asp-validation-for="shippingMethod" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="shippingAddress" class="control-label"></label>
+            <input asp-for="shippingAddress" class="form-control" />
+            <span asp-validation-for="shippingAddress" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="phoneNumber" class="control-label"></label>
+            <input asp-for="phoneNumber" class="form-control" />
+            <span asp-validation-for="phoneNumber" class="text-danger"></span>
+        </div>
+
+        @if (Model.CartItems != null)
+        {
+            @for (int i = 0; i < Model.CartItems.Count; i++)
+            {
+                <input type="hidden" asp-for="@Model.CartItems.ElementAt(i).CartItemID" />
+                <input type="hidden" asp-for="@Model.CartItems.ElementAt(i).ProductID" />
+                <input type="hidden" asp-for="@Model.CartItems.ElementAt(i).Quantity" />
+                <input type="hidden" asp-for="@Model.CartItems.ElementAt(i).userID" />
+            }
+        }
+
+        <div class="form-group">
+            <input type="submit" value="Confirm Checkout" class="btn btn-primary" />
+        </div>
+    </form>
+
+    <div>
+        <a asp-action="Index">Back to Cart</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<br>
+<br>
+<br>

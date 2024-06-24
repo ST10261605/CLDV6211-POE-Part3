@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Craftwork";
+}
+
+<h1 class="workHeading1">Our <span class="highlight-word3">craftwork</span></h1>
+
+<h2 class="workHeading2">Handmade products for every project</h2>
+
+<div class="card-container">
+    <div class="card">
+        <img src="~/Images/Work1.jpg" alt="Straw Wrapped Bead Pot" style="width:100%">
+        <h1 class="cardHeading">Straw Bead Pot</h1>
+        <p class="price">R100</p>
+        <p class="cardParagraph">From the roots of Mpumalanga, this beauty was made using straw, clay and crystal beads.</p>
+        <form>
+            <input type="hidden" name="productId" value="1" />
+            <button method="AddToCart" type="submit">Add to Cart</button>
+        </form>
+    </div>
+
+    <div class="card2">
+        <img src="~/Images/Work2.jpeg" alt="Copper Kettle" style="width: 100%" />
+        <h1 class="cardHeading">Copper & Straw Tea Set</h1>
+        <p class="price">R219.99</p>
+        <p class="cardParagraph">Perfect for afternoon tea brunches, made with love in Belgium.</p>
+        <form>
+            <input type="hidden" name="productId" value="2" />
+            <button method="AddToCart" type="submit">Add to Cart</button>
+        </form>
+    </div>
+
+    <div class="card3">
+        <img src="~/Images/Work3.jpg" alt="Straw Plate" style="width: 100%" />
+        <h1 class="cardHeading">Straw Plate</h1>
+        <p class="price">R81.99</p>
+        <p class="cardParagraph">Eco-friendly straw plate, easy to clean, microwave safe.</p>
+        <form>
+            <input type="hidden" name="productId" value="3" />
+            <button method="AddToCart" type="submit">Add to Cart</button>
+        </form>
+    </div>
+
+    <div class="card4">
+        <img src="~/Images/Work4.jpg" alt="Red clay pot" style="width: 100%" />
+        <h1 class="cardHeading">Ruby Red Clay Pot</h1>
+        <p class="price">R452.99</p>
+        <p class="cardParagraph">This ruby red pot, meticulously crafted in Canada, spruces up any living space.</p>
+        <form>
+            <input type="hidden" name="productId" value="4" />
+            <button method="AddToCart" type="submit">Add to Cart</button>
+        </form>
+    </div>
+
+    <div class="card5">
+        <img src="~/Images/ProductHomePage1.jpeg" alt="Elegant and timeless wood crafted chair" style="width: 100%" />
+        <h1 class="cardHeading">Elegant wood crafted chair</h1>
+        <p class="price">R478</p>
+        <p class="cardParagraph">Indulge in the epitome of sophistication with our handcrafted wooden chair.</p>
+        <form>
+            <input type="hidden" name="productId" value="5" />
+            <button method="AddToCart" type="submit">Add to Cart</button>
+        </form>
+    </div>
+
+    <div class="card6">
+        <img src="~/Images/Work5.jpg" alt="Striped maroon clay pot" style="width: 100%" />
+        <h1 class="cardHeading">Striped maroon clay pot</h1>
+        <p class="price">R119.80</p>
+        <p class="cardParagraph">All the way from Egypt, this striped beauty is a must-have.</p>
+        <form>
+            <input type="hidden" name="productId" value="6" />
+            <button method="AddToCart" type="submit">Add to Cart</button>
+        </form>
+    </div>
+
+    <div class="card7">
+        <img src="~/Images/Work6.jpeg" alt="South African beaded necklace" style="width: 100%" />
+        <h1 class="cardHeading">South African beaded necklace</h1>
+        <p class="priceOutOfStock">Out of stock</p>
+        <p class="cardParagraph">Embrace an array of rich South African culture with this durable beaded necklace.</p>
+        <form>
+            <input type="hidden" name="productId" value="7" />
+            <button method="AddToCart" type="submit">Add to Cart</button>
+        </form>
+    </div>
+
+    <div class="card8">
+        <img src="~/Images/ProductHomePage2.jpeg" alt="Dark oak bookshelf" style="width: 100%" />
+        <h1 class="cardHeading">Dark Oak Bookshelf</h1>
+        <p class="price">R799.99</p>
+        <p class="cardParagraph">A fusion of classic charm and modern functionality.</p>
+        <form>
+            <input type="hidden" name="productId" value="8" />
+            <button method="AddToCart" type="submit">Add to Cart</button>
+        </form>
+    </div>
+
+</div> <!--End of card container-->
+
+<div class="cartMessage">
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+</div>
+
+<br>
+<br>
+<br>
+<br>

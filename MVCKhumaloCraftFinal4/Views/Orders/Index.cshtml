@@ -1,0 +1,85 @@
+﻿@model IEnumerable<MVCKhumaloCraftFinal4.Models.Order>
+
+@{
+    ViewData["Title"] = "Orders";
+    bool isAdmin = Context.Session.GetString("IsAdmin") == "true";
+}
+
+<h1>Orders</h1>
+
+@if (!User.Identity.IsAuthenticated && !isAdmin) //if user is not signed in and admin not signed in
+{
+    <script>
+        // Display a popup message and redirect to login page
+        alert('You need to be logged in to view this page.');
+        window.location.href = '@Url.Action("Login", "Users")';
+    </script>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>User ID</th>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Delivery Country</th>
+                <th>Shipping Method</th>
+                <th>Shipping Address</th>
+                <th>Phone Number</th>
+                <th>Status</th>
+                @if (isAdmin)
+                {
+                    <th>Actions</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.orderID</td>
+                    <td>@order.userID</td>
+                    <td>@order.productID</td>
+                    <td>@order.Product.productName</td>
+                    <td>@order.deliveryCountry</td>
+                    <td>@order.shippingMethod</td>
+                    <td>@order.shippingAddress</td>
+                    <td>@order.phoneNumber</td>
+                    <td>@order.orderStatus</td>
+                    @if (isAdmin)
+                    {
+                        <td>
+                            @if (order.orderStatus != "Processed")
+                            {
+                                <form asp-action="ProcessOrder" asp-route-id="@order.orderID" method="post">
+                                    <button type="submit" class="btn btn-success">Process Order</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <span>Processed</span>
+                            }
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

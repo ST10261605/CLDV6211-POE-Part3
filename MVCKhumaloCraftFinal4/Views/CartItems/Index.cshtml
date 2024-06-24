@@ -1,0 +1,64 @@
+﻿@model IEnumerable<MVCKhumaloCraftFinal4.Models.CartItem>
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<h1>Shopping Cart</h1>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price (ZAR)</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Product.productName</td>
+                    <td>@item.Product.description</td>
+                    <td>R @item.Product.Price.ToString("0.00")</td>
+                    <td>@item.Product.Category</td>
+                    <td>
+                        <form asp-action="UpdateQuantity" method="post">
+                            <input type="hidden" name="cartItemId" value="@item.CartItemID" />
+                            <input type="number" name="quantity" value="@item.Quantity" min="1" class="form-control" style="width: 70px; display: inline;" />
+                            <button type="submit" class="btn updateQuantity-style">Update quantity</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.CartItemID">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" class="text-right">
+                    <a asp-action="Checkout" class="btn btn-primary">Proceed to Checkout</a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
